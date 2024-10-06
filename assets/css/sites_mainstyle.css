@@ -624,11 +624,21 @@ a#scroll {
   outline: 0;
   box-shadow: 0 0 0 .25rem rgb(13 110 253 / 0%);
 }
+.w_75{
+  width:75%;
+}
 @media (max-width:767px){
   .disp_flx {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+}
+.w_75{
+  width:100%;
+  margin-bottom: 30px;
+}
+.order-last {
+  order: 0 !important;
 }
   .mt-75 {
     margin-top: 15px;
