@@ -192,7 +192,9 @@ button.slick-prev {
   height: 35px;
 }
 .slick-next:before, [dir=rtl] .slick-prev:before {
-  content: '→';
+  /* content: '→'; */
+    content: "\f061";
+  font-family:'fontawesome'
 }
 
 .slick-next:before, .slick-prev:before {
@@ -202,14 +204,17 @@ button.slick-prev {
   color: #fff;
 }
 .slick-prev:before {
-  content: '←';
+  /* content: '←'; */
+  /* content: '&f060'; */
+  content: "\f060";
+  font-family:'fontawesome'
 }
 
 .slick-next:before, .slick-prev:before {
   font-size: 20px;
   line-height: 1;
   opacity: .75;
-  color: red;
+  color: rgb(0, 89, 255);
   font-weight: bold;
 }
 .slick-slide img{
@@ -292,10 +297,10 @@ opacity:0;}
 }
 .m-logo-sty{
   background-color: #f4f4f4;
-  padding: 10px 50px;
+  padding: 10px 15px 10px 120px;
 }
 .m-logo-padd{
-  padding: 10px 50px;
+  padding: 60px 15px 10px 120px;
 }
 .disp_flex-footer {
   display: flex;
