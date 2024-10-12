@@ -26,6 +26,7 @@
 }
 .logo_font {
   font-family: symbol !important;
+  font-size: 60px;
 }
 .show_sm{
   display: none;
@@ -301,6 +302,9 @@ opacity:0;}
 }
 .m-logo-padd{
   padding: 60px 15px 10px 120px;
+}
+.btn_padding-1030{
+  padding: 10px 30px;
 }
 .disp_flex-footer {
   display: flex;
@@ -632,7 +636,41 @@ a#scroll {
 .w_75{
   width:75%;
 }
+.h-473{
+  height:473px
+}
+.h-520{
+  height:520px
+}
+.h-442{
+  height:442px
+}
+.h-499{
+height:499px
+}
+.upper_layerinn {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @media (max-width:767px){
+  .h-499{
+    height:100%
+    }
+  .h-442{
+    height:100%
+  }
+  .h-520{
+    height:100%
+  }
+  .h-473{
+    height:100%
+  }
   .disp_flx {
     flex-direction: column;
     justify-content: flex-start;
