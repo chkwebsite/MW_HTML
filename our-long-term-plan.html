@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html  lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sites_mainstyle.css">
+    <link rel="stylesheet" href="assets/css/theme-color/color.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <title>|| Microware ||</title>
+    <style>
+body>.skiptranslate {
+    display: none;
+}
+.goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+    height: 35px;
+}
+body>.skiptranslate, .goog-logo-link, .gskiptranslate, .goog-te-gadget span, .goog-te-banner-frame, #goog-gt-tt, .goog-te-balloon-frame, div#goog-gt- {
+    display: none !important;
+}
+
+
+.page-section {
+  min-height: 100px;
+  width: 100%;
+  margin-left: 0%;
+  margin-top: 0px;
+  padding: 0em;
+  background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
+  color: white;
+  /* box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.navigation {
+    position: fixed;
+    width: auto;
+    margin-left: 0%;
+    background-color: rgb(0 0 0 / 30%);
+    z-index: 1051;
+}
+.navigation__link {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 400;
+  border-bottom: 2px solid;
+}
+.navigation__link:hover {
+  color: #20709f;
+}
+.navigation__link.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #20709f;
+  font-weight: bold;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    transform: translate(0%, -50%);
+}
+.upper_layer {
+    position: absolute;
+    content: "";
+    width: 90%;
+    left: 5%;
+    bottom: 3%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-weight: bold;
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+    border: 0px;
+    border-bottom: 1px solid #a7a7a7;
+    border-radius: 0px;
+}
+.btn_style{
+  position: relative;
+}
+.btn_style::after{
+  position: absolute;
+    content: "";
+    border-left: 40px solid rgb(255 251 238 / 30%);
+    border-right: 40px solid #0000ff00;
+    border-top: 40px solid #ffa50000;
+    border-bottom: 40px solid #00000000;
+    border-radius: 50px;
+    right: -41px;
+    bottom: -40px;
+    z-index: 5;
+    transform: rotate(45deg);
+}
+    </style>
+</head>
+<body id="content_text">
+    <section class="header">
+        <div class="container-fluid">
+            <div class="row" style="border-bottom: 1px solid #ddd;position: relative;z-index: 1055;">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 m-auto">
+                    <nav class="navbar navbar-expand-md py-0">
+                        <div class="container-fluid p-0">
+                          <a class="navbar-brand show_sm" href="javascript:void(0)">TopHeader</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="topnavbar">
+                            <ul class="navbar-nav m-auto1 top_h line">
+                              
+                            </ul>
+                            <ul class="navbar-nav ms-auto top_h d-flex line">
+                              <li class="nav-item dropdown">        
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Bespoke Development</a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="development-process.html">Development Process</a></li>
+                                  <li><a class="dropdown-item" href="qa-process.html">QA Process</a></li>
+                                  <li><a class="dropdown-item" href="support.html">Support</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown">        
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our packages & SaaS offerings</a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="technical.html">Technical</a></li>
+                                  <li><a class="dropdown-item" href="survey.html">Survey</a></li>
+                                  <li><a class="dropdown-item" href="analysis.html">Analysis</a></li>
+                                  <li><a class="dropdown-item" href="contact-centre.html">Contact Centre</a></li>
+                                  <li><a class="dropdown-item" href="project-management.html">Project Management</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active1" href="request-demo.html">Request Demo</a>
+                              </li>
+                              <li class="nav-item">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                  <button type="button" id="decreasetext" class="btn btn-light rounded-0">A-</button>
+                                  <button type="button" id="resettext" class="btn btn-light rounded-0">A</button>
+                                  <button type="button" id="increasetext" class="btn btn-light rounded-0">A+</button>
+                                </div>
+                                    <!-- <a class="nav-link " id="decreasetext" href="javascript:void(0)">A-</a> -->
+                                </li>
+                                <!-- <li class="nav-item">
+                                <a class="nav-link " id="resettext" href="javascript:void(0)">A</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " id="increasetext" href="javascript:void(0)">A+</a>
+                                </li>                     -->
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+          
+            <div class="row" style="border-bottom: 1px solid #ddd;position: relative;z-index: 1052;">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 m-auto">
+                <nav class="navbar navbar-expand-lg p-0">
+                  <div class="container-fluid">
+                    <a class="navbar-brand show_sm1" href="index.html">
+                      <img class="logo_height logo_width" src="./assets/images/logo_mw.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                      <ul class="navbar-nav ms-auto line">
+                        <li class="nav-item dropdown">        
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About us</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About us</a></li>
+                            <li><a class="dropdown-item" href="who-we.html">Who we are </a></li>
+                            <li><a class="dropdown-item" href="our-long-term-plan.html">Our long term plan</a></li>
+                            <li><a class="dropdown-item" href="core-group.html">Core Group</a></li>
+                            <li><a class="dropdown-item" href="the-team.html">The Team</a></li>
+                            <li><a class="dropdown-item" href="partnerships.html">Partnerships </a></li>
+                            <li><a class="dropdown-item" href="hiring.html">Hiring </a></li>
+                            <li><a class="dropdown-item" href="technologies.html">Technologies </a></li>
+                            <li><a class="dropdown-item" href="certifications.html">Certifications </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">      
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our services</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="micro-dev-tech.html">MicroDevTech</a></li>
+                            <li><a class="dropdown-item" href="micro-tech-sol.html">MicroTechSol</a></li>
+                            <li><a class="dropdown-item" href="global-solutions.html">Global Solutions</a></li>
+                            <li><a class="dropdown-item" href="insights.html">Insights</a></li>
+                            <li><a class="dropdown-item" href="big-data-analytics.html">BigData and Analytics</a></li>
+                            <li><a class="dropdown-item" href="ai/ml-interventions.html">AI/ML interventions</a></li>
+                            <li><a class="dropdown-item" href="legacy-app-support.html">Legacy app support</a></li>
+                            <li><a class="dropdown-item" href="consulting.html">Consulting</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">      
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Client speak</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="our-clients.html">Our clients</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials </a></li>
+                            <li><a class="dropdown-item" href="case_studies.html">Case studies</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="testimonials.html">Employee Corner</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact us</a>
+                        </li> -->
+                        
+                       <!-- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CONSULTING</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Administration-1</a></li>
+                            <li><a class="dropdown-item" href="#">Administration-2</a></li>
+                            <li><a class="dropdown-item" href="#">Administration-3</a></li>
+                          </ul>
+                        </li>
+                         <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">POLICIES</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Vacancy-1</a></li>
+                            <li><a class="dropdown-item" href="#">Vacancy-2</a></li>
+                            <li><a class="dropdown-item" href="#">Vacancy-3</a></li>
+                          </ul>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+        </div>
+        </section>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 p-0">
+        <div class="pos_rel">
+            <img src="./assets/images/devtech_bann.png"  width="100%" alt="">
+            <div class="upper_layerinn text-white"><div>
+                <h1 class="text-center">
+                   " 
+                   <!-- <span class="logo_font">mw</span> -->
+                   Our long term plan "
+                </h1>
+                <p class="text-center">Microware Software is a leading global provider of system<br> firmware and software engineering services</p>
+              <!-- <a href="devtech.html" class="btn btn-primary rounded-5 btn_padding-1030"><strong> Read More</strong></a> -->
+            </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 m-auto py-4">
+        <h1 class="fw-bold text-center mb-0 pt-4">A guide to long-range planning for SaaS<br> business success</h1>
+        <p class="text-center mb-4">Learn how long-range planning in SaaS can help ensure more 
+            predictable and sustained growth and how <br>
+            to create a long-range plan for your SaaS business.
+        </p>
+        <img src="./assets/images/work_plan.png" class="w-100" alt="">
+        
+        <div class="row mt-4">
+            <div class="col-sm-12">
+                <div class="bg-light p-4">
+                <h3 class="mb-4">Summary</h3>
+                <p>
+                    Long-range planning is key to success in SaaS. It defines your company's overall 
+                    trajectory and when done in conjunction with operational planning can be transformative 
+                    for your business.
+                    <br><br>
+                    In this guide, we'll explain the key differences between a long-range plan and other important types of 
+                    plans you create for your business and how they work together.
+                                        <br><br>
+                    You'll also learn the steps required to create a long-range plan and all the elements you need to 
+                    include to help your company achieve its long-term goals.
+                </p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="row my-5">
+            <div class="col-sm-12">
+                <p>
+                    Long gone are the days when CFOs were just the ‘numbers person’. Truth be told, CFOs are among the top strategic resources for the CEO. 
+                    <br><br>
+However, CFOs, given all the bread-and-butter tasks and the market volatility that comes with operating in a SaaS company, often get caught in short-term performance pressures, understandably, and usually at the expense of long-range planning and long-term goals. And that’s a hefty expense. 
+<br><br>
+In 2020, a Harvard Law School Forum on Corporate Governance published a study that reviewed over a decade of research and revealed some rather telling numbers.
+<br><br>
+The study points out that companies whose CFOs focused on the longer term generated superior growth in revenues and economic profit when compared with others, 47% better in revenue and 81% better in economic profit. They also created more than twice as many jobs on average, outpacing others by better than 130%. 
+<br><br>
+However, it goes on to add that “behaving in a way that creates long-term value can be difficult in an environment where short-term performance often receives a disproportionate share of attention”.
+<br><br>
+This only proves why long-range planning is vital for SaaS CFOs. 
+                </p>
+
+                <h3 class="mb-4">What is a long-range plan in SaaS?</h3>
+                <p>
+                    A long-range plan in SaaS refers to a strategic roadmap designed to guide the company’s growth and evolution over an extended period, typically spanning two to five years or more.
+                    <br><br>
+This plan is crucial for achieving critical mission and vision statements and ensuring sustainable long-term success.
+                </p>
+                <h3 class="mb-4">How long-range planning relates to strategic planning</h3>
+                <p>
+                    While both long-range planning and strategic planning are related and responsible for the future direction of the company, they differ in their purpose. 
+                    <br><br>
+                    Long-range planning is all about setting organizational goals and objectives for an organization over an extended period, typically spanning two to five years, sometimes even longer. The long-range planning process is about using current business trends to project the future and making plans based on these projections.
+                    <br><br>
+                    Strategic planning, on the other hand, is the process of deciding on the organization's direction and figuring out how to allocate the right resources, both financial and people, to pursue this strategy.
+                    <br><br>
+                    Strategic planning also requires a thorough evaluation of the strengths and weaknesses of the business and the opportunities and threats it faces (known as a SWOT analysis). To do this, internal and external factors related to competition, the technology landscape and trends, market shifts, and broader economic changes must be evaluated. 
+                </p>
+                <h3 class="mb-4">Annual operating plan (AOP) vs. a long-range plan: What’s the difference?</h3>
+                <p>
+                    An annual operating plan (AOP) is a an action plan that describes the company’s annual operational objectives and the activities necessary to achieve them.  
+                    <br><br>
+While both long-range and annual operational planning are critical, the long-range plan is intended to show how the company is set up for the next two to five years. Think of it as a trajectory of sorts. 
+<br><br>
+The long-range plan doesn’t need to have the same granularity in terms of period and detail. An AOP usually describes the monthly or quarterly activities required to hit annual targets.
+<br><br>
+In contrast, the long-range plan focuses on the longer-term outlook for the company and what it needs to do at a higher level, to get there while still balancing near-term requirements.
+                </p>
+                <h3 class="mb-4">Why you need to do long-range planning in your business</h3>
+                <p>
+                    The simple answer is that annual planning alone isn’t enough. In a crowded market, it's the vision and strategic execution over the longer term that separate high-performing businesses from average ones.  
+                </p>
+                <h4>To enable and empower your investors</h4>
+                <p>
+                    Let’s look at a scenario that will help drive that point home. If your investors has your one-year historical performance, your current FY forecast, and the long-range plan for the next two years, they have pretty much everything they need to be well-informed and provide strategic advice. Enabling and empowering your investors to help in this way can contribute significantly to your success. 
+                </p>
+                <h4>Align with your board on long-term goals</h4>
+                <p>
+                    With a long-range plan, your board can also understand the trajectory of the company. While there may be a few disagreements on the short-term (one-year operational plan/forecast) numbers, when they see the long-term vision and the path you plan to take to achieve it, it’s easier for them to engage and come to a consensus. 
+                </p>
+                <h4>Avoid common pitfalls in planning</h4>
+                <p>Also, as an executive leader (founder/CEO/CFO), when you are continuously planning your next move with a rolling forecast model, your long-range plan can help you avoid common pitfalls because your operational model and long-range plan will work in tandem.  
+                    <br><br>
+                    For example, you may have a number estimate for expenses each month in your long-range plan, but your operational model will be updated monthly. If the expenses there are showing higher or lower numbers than your long-range plan, you're able to update it accordingly. 
+                    <br><br>
+                    It’s worth noting here that this exercise is very time-consuming when using spreadsheets. Drivetrain can help you do this work in a fraction of the time and without all the heavy lifting. But the main point here is that regardless of how you do it, long-range planning is something every SaaS company should implement.     
+                    <br><br>
+                    Case-in-point: In our webinar on CFO Best Practices, FarEye CFO Sanjay Sangal illustrated the importance of long-range planning with his own first-hand experience. Rathi said that with the efficiencies Drivetrain introduced for his finance team, he was able to use the time saved to develop the company’s first long-range plan. And it was a good thing he did…  </p>
+
+                    <h3 class="mb-4">How to get started with long-term planning</h3>
+                    <h4>Elements to include in your long-term plan</h4>
+                    <h5>Timeline</h5>
+                    <p>
+                        A minimum two- to five-year projection is crucial. Keep in mind, though, that you need to have enough flexibility in your plan to adapt to rapid market and technological changes that are typical in the SaaS industry.
+                        <br><br>
+While doing the projection, set regular intervals for reviews and include key milestones such as product development stages, market expansion goals, customer acquisition targets, and revenue milestones, among others. And, make sure they are realistic. 
+                    </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-light">
+        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 m-auto">
+          
+          <div class="row py-5">
+            <div class="col-sm-12">
+              <h2 class="text-dark">Request quotation</h2>
+              <small class="text-dark">Get in touch with sales</small>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" placeholder="Enter name" name="name">
+                <label class="text-dark" for="email">Name</label>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" placeholder="Enter email" name="email">
+                <label class="text-dark" for="email">Work Email</label>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control"  placeholder="Enter Company name" name="company_name">
+                <label class="text-dark" for="email">Company name</label>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control"  placeholder="Enter Country" name="country">
+                <label class="text-dark" for="email">Country</label>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                  <div class="form-floating mb-3">
+                    <select class="form-select" id="sel1" name="sellist">
+                      <option>91</option>
+                      <option>92</option>
+                      <option>93</option>
+                      <option>94</option>
+                    </select>
+                    <label for="sel1" class="text-dark form-label">Select</label>
+                  </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  placeholder="Enter Country" name="country">
+                    <label class="text-dark" for="email">Phone number</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="form-floating mb-3">
+                <select class="form-select" id="sel1" name="sellist">
+                  <option>Select interest</option>
+                  <option>92</option>
+                  <option>93</option>
+                  <option>94</option>
+                </select>
+                <label for="sel1" class="text-dark form-label">Program of interest</label>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="form-floating mb-3">
+                <textarea type="text" class="form-control"  placeholder="Enter Country" name="country"></textarea>
+                <label class="text-dark" for="email">Have an enquiry?</label>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 text-dark mb-3">
+              <small><a class="text-dark" href="#"> Click here</a> to view the privacy policy</small>
+              <div class="form-check">
+                <label class="form-check-label" style="font-size: 11px;">
+                  <input class="form-check-input" type="checkbox" name="remember"> There are many variations of 
+                  passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by 
+                  injected humour, or randomised words which don't look even slightly believable.
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" style="font-size: 11px;">
+                  <input class="form-check-input" type="checkbox" name="remember"> Lorem Ipsum is simply dummy 
+                  text of the printing and typesetting industry.
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-12 pt-4 text-center">
+              <button type="button" class="btn btn-primary rounded-5 fw-semibold px-5 py-3" data-aos="zoom-in">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-xl-10 col-lg-10 col-md-11 col-sm-12 m-auto">
+          <div class="govt_logo_slick-slider" style="border: 1px solid #a6aac1;">
+            <div class="element element-1">
+              <img src="./assets/images/govt-logo-1.png" alt="">
+            </div>
+            <div class="element element-2">
+              <img src="./assets/images/govt-logo-2.png" alt="">
+            </div>
+            <div class="element element-3">
+              <img src="./assets/images/govt-logo-3.png" alt="">
+            </div>
+            <div class="element element-4">
+              <img src="./assets/images/govt-logo-4.png" alt="">
+            </div>
+            <div class="element element-5">
+              <img src="./assets/images/govt-logo-2.png" alt="">
+            </div>
+            <div class="element element-6">
+                <img src="./assets/images/govt-logo-3.png" alt="">
+              </div>
+              <div class="element element-7">
+                <img src="./assets/images/govt-logo-4.png" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+    
+    
+    
+    
+  <section class="footer_n bg-f">
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 m-auto">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 p-0">
+          <div class="m-logo-sty">
+            <img src="./assets/images/logo_mw.png" alt="" style="height: 60px;">
+          </div>
+          <div class="disp_flex-footer py-5 m-logo-padd text-white">
+            <p>Spaze I -Tech Park, 1151, Tower B2,<br> Sohna - Gurgaon Rd, Sector 49,<br> Gurugram, Haryana 122018</p>
+            <div class="disp_flex-inn">
+              <img src="./assets/images/mail-icon.png" alt="">
+              email <br>info@microwarecorp.com
+            </div>
+            <div class="disp_flex-inn">
+              <img src="./assets/images/phone-icon.png" alt="">
+              Call Us <br>(+91) 01240000000
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 p-0">
+          <div class="m-logo-sty">
+            <h3 class="mb-0" style="padding: 13px 0px;">Pages</h3>
+          </div>
+          <div class="disp_flex-footer py-5 m-logo-padd text-white">
+            <ul class="footer_ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="offerings.html">Offerings</a></li>
+              <li><a href="industries.html">Industries</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="case-studies">Case studies</a></li>
+              <li><a href="carriers.html">Carriers</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="quote.html">Quote</a></li>
+            </ul>
+           
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 p-0">
+          <div class="m-logo-sty">
+            <h3 class="mb-0" style="padding: 13px 0px;">Gate in Touch</h3>
+          </div>
+          <div class="py-5 m-logo-padd text-white">
+            <div class="footer-social mb-3">
+            <a href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          <a href="request-demo.html" class="btn btn-outline-primary rounded-0">Get a demo</a>
+          <a href="contact.html" class="btn btn-primary rounded-0"><i class="bi bi-telephone-fill"></i> Contact us</a>
+          </div>
+        </div>
+        <div class="col-sm-12 p-0">
+          <div class="m-logo-sty" style="background-color: #003b68;">
+            <div class="copyright-flex">
+              <small style="color:#ffffff">Copyright © Microware computing consulting pvt ltd. All rights reserved</small>
+              <ul class="copy-footer">
+                <li><a href="cookies.html">Cookies</a></li>
+                <li><a href="legal">Legal</a></li>
+                <li><a href="privacy">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+    <div id="floater">
+      <div class="dis_flx_soc">
+        <a href="#"> <img src="./assets/images/facebook-icon.png" alt=""> </a>
+        <a href="#"> <img src="./assets/images/insta-icon.png" alt=""> </a>
+        <a href="#"> <img src="./assets/images/twitter-icon.png" alt=""> </a>
+        <a href="#"> <img src="./assets/images/youtube-icon.png" alt=""> </a>
+        <a href="#"> <img src="./assets/images/playstore-icon.png" alt=""> </a>
+      </div>
+    </div>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+</body>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<!-- <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+<script type="text/javascript" src="assets/js/translate.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/all.min.js"></script>
+<script type="text/javascript" src="assets/css/aos/aos.js"></script>
+<script type="text/javascript" src="./assets/js/slick.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          autoDisplay: 'false',
+          includedLanguages: 'hi,en,', // <- remove this line to show all language
+          layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+      }, 'google_translate_element');
+  }
+</script>
+
+<!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+<script>
+  
+  // Increase/descrease font size
+  $('#increasetext').click(function() {
+      curSize = parseInt($('#content_text').css('font-size')) + 2;
+      if (curSize <= 16)
+          $('#content_text').css('font-size', curSize);
+  });
+
+  $('#resettext').click(function() {
+      if ((curSize != 12) || (curSize != 16))
+          $('#content_text').css('font-size', 14);
+  });
+
+  $('#decreasetext').click(function() {
+      curSize = parseInt($('#content_text').css('font-size')) - 2;
+      if (curSize >= 12)
+          $('#content_text').css('font-size', curSize);
+  });
+</script>
+<script>
+  $(document).ready(function() {
+		$('a[href*=#]').bind('click', function(e) {
+				e.preventDefault();
+				var target = $(this).attr("href");
+				$('html, body').stop().animate({
+						scrollTop: $(target).offset().top
+				}, 600, function() {
+						location.hash = target;
+				});
+
+				return false;
+		});
+});
+$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop();
+		$('.page-section').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('.navigation a.active').removeClass('active');
+						$('.navigation a').eq(i).addClass('active');
+				}
+		});
+}).scroll();
+</script>
+
+<!-- <script>
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+          {pageLanguage: 'en'},
+          'google_translate_element'
+      );
+  }
+</script> -->
+<script type="text/javascript">
+    window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  });
+  </script>
+  <script type="text/javascript">
+  $(window).scroll(function() {
+    var winScrollTop = $(window).scrollTop();
+    var winHeight = $(window).height();
+    var floaterHeight = $('#floater').outerHeight(true);
+    var fromBottom = 100;
+    var top = winScrollTop + winHeight - floaterHeight - fromBottom;
+	$('#floater').css({'top': top + 'px'});
+});
+  </script>
+  <script type="text/javascript">
+    jQuery(function () {
+        initChangeStyleSheet();
+    });
+  
+    function initChangeStyleSheet() {
+        var folder_path = 'assets/css/theme-color/';
+        var selector = 'head link[href$="color.css"]';
+        var color = sessionStorage.getItem('ajwebskin');
+  
+  
+        if (color == null) {
+            selector = 'head link[href$="color.css"]';
+        }
+        else {
+            $(selector).attr('href', folder_path +  color );
+        }
+        $('.default-color').click(function () {
+            $(selector).attr('href', folder_path + 'color.css');
+            sessionStorage.setItem('ajwebskin', 'color.css');
+        });
+        $('.black-color').click(function () {
+            $(selector).attr('href', folder_path + 'black-color.css');
+            sessionStorage.setItem('ajwebskin', 'black-color.css');
+        });
+        $('.red-color').click(function () {
+            $(selector).attr('href', folder_path + 'red-color.css');
+            sessionStorage.setItem('ajwebskin', 'red-color.css');
+        });
+        $('.pink-color').click(function(){
+            $(selector).attr('href', folder_path + 'pink-color.css');
+            sessionStorage.setItem('ajwebskin', 'pink-color.css')
+        })
+        $('.yellow-color').click(function () {
+            $(selector).attr('href', folder_path + 'yellow-color.css');
+            sessionStorage.setItem('ajwebskin', 'yellow-color.css');
+        });
+        $('.bluegreen-color').click(function () {
+            $(selector).attr('href', folder_path + 'bluegreen-color.css');
+            sessionStorage.setItem('ajwebskin', 'bluegreen-color.css');
+  
+        });
+        $('.navyblue-color').click(function () {
+            $(selector).attr('href', folder_path + 'navyblue-color.css');
+            sessionStorage.setItem('ajwebskin', 'navyblue-color.css');
+        });
+        $('.purple-color').click(function () {
+            $(selector).attr('href', folder_path + 'purple-color.css');
+            sessionStorage.setItem('ajwebskin', 'purple-color.css');
+        });
+  
+    }
+  </script>
+  <script>
+    $(document).ready(function(){
+  $('ul.top_h li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});
+  </script>
+  <script>
+    $(".slick-slider").slick({
+    slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+  });
+  </script>
+   <script>
+    $(".photo_gallery_slick-slider").slick({
+    slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+  });
+  </script>
+  <script>
+    $(".news_slick-slider").slick({
+    slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+  });
+  </script>
+  <script>
+    $(".govt_logo_slick-slider").slick({
+    slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        arrows: true,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+  });
+  </script>
+  <script>
+    // Lightbox Gallery
+
+// query selectors
+const lightboxEnabled = document.querySelectorAll('.lightbox-enabled');
+const lightboxArray = Array.from(lightboxEnabled);
+const lastImage = lightboxArray.length-1;
+const lightboxContainer = document.querySelector('.lightbox-container');
+const lightboxImage = document.querySelector('.lightbox-image');
+const lightboxBtns = document.querySelectorAll('.lightbox-btn');
+const lightboxBtnRight = document.querySelector('#right');
+const lightboxBtnLeft = document.querySelector('#left');
+const close = document.querySelector('#close');
+let activeImage;
+// Functions
+const showLightBox = () => {lightboxContainer.classList.add('active')}
+
+const hideLightBox = () => {lightboxContainer.classList.remove('active')}
+
+const setActiveImage = (image) => {
+lightboxImage.src = image.dataset.imgsrc;
+activeImage= lightboxArray.indexOf(image);
+}
+
+const transitionSlidesLeft = () => {
+  lightboxBtnLeft.focus();
+  $('.lightbox-image').addClass('slideright'); 
+   setTimeout(function() {
+  activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage-1]);
+}, 250); 
+
+
+  setTimeout(function() {
+    $('.lightbox-image').removeClass('slideright');
+}, 500);   
+}
+
+const transitionSlidesRight = () => {
+ lightboxBtnRight.focus();
+$('.lightbox-image').addClass('slideleft');  
+  setTimeout(function() {
+   activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage+1]);
+}, 250); 
+  setTimeout(function() {
+    $('.lightbox-image').removeClass('slideleft');
+}, 500);  
+}
+
+const transitionSlideHandler = (moveItem) => {
+  moveItem.includes('left') ? transitionSlidesLeft() : transitionSlidesRight();
+}
+
+// Event Listeners
+lightboxEnabled.forEach(image => {
+   image.addEventListener('click', (e) => {
+    showLightBox();
+    setActiveImage(image);
+    })                     
+    })
+lightboxContainer.addEventListener('click', () => {hideLightBox()})
+close.addEventListener('click', () => {hideLightBox()})
+lightboxBtns.forEach(btn => {
+btn.addEventListener('click', (e) => {
+e.stopPropagation();
+  transitionSlideHandler(e.currentTarget.id);
+})
+})
+
+lightboxImage.addEventListener('click', (e) => {
+e.stopPropagation();
+
+})
+  </script>
+  <script>
+    $(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+      $("#scroll").fadeIn();
+      } else {
+      $("#scroll").fadeOut();
+    }
+  });
+  
+  $("#scroll").click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 900);
+    return false;
+  });
+});
+
+
+
+  </script>
+</html>
