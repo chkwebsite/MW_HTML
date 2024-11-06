@@ -924,6 +924,21 @@ height:487px
   color:#eeeeee;
   transition: 0.3s;
 }
+.grid_2 {
+  display: grid;
+  grid-template-columns: 50px auto;
+  height: auto;
+}
+.qut {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e7419b;
+}
+.ans {
+  font-size: 22px;
+  color: #e7419b;
+  font-weight: bold;
+}
 @media (max-width:767px){
   .mt-100{
     margin-top: 30px !important;
