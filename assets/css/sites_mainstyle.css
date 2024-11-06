@@ -932,12 +932,38 @@ height:487px
 .qut {
   font-size: 30px;
   font-weight: bold;
-  color: #e7419b;
+  color: #1d6e9e;
 }
 .ans {
   font-size: 22px;
-  color: #e7419b;
+  color: #1d6e9e;
   font-weight: bold;
+}
+/* ===============================  */
+.inner-header-wrp {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0px;
+}
+.inner-header-wrp:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #00000096; */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  /* mix-blend-mode: darken; */
+}
+img.pic-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 @media (max-width:767px){
   .mt-100{
